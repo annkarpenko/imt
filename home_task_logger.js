@@ -3,15 +3,15 @@ var emt=new Event();
 var userName="Adam";
 
 emt.on("logIn", function(userName){
-	console.log(new Date() + userName + " вошел в чат");
+	console.log(new Date().toLocaleString() + userName + " вошел в чат");
 })
 
 emt.on("someAction", function(){
-	console.log(new Date() + userName + " изменил статус");
+	console.log(new Date().toLocaleString() + userName + " изменил статус");
 })
 
 emt.on("logout", function(){
-	console.log(new Date() + userName + " вышел из чата");
+	console.log(new Date().toLocaleString() + userName + " вышел из чата");
 })
 
 
